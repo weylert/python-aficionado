@@ -73,7 +73,7 @@ print("\n",spacer * 80, "\n ### END OF EXERCISE 2 ### \n", spacer * 80,"\n")
 #"Port id". Save these two items into variables and print them to the screen. You should extract only the system name and port id from the lines 
 #(i.e. your variables should only have 'twb-sf-hpsw1' and '15'). Break out of your loop once you have retrieved these two items.
 
-with open("show_lldp") as lldp:
+with open("show_lldp.txt") as lldp:
     lldp_opened = lldp.read()
 
 verifier, verifier2 = (False,False)
@@ -140,7 +140,6 @@ for information in arp_table:
     new_mac = ":".join(new_mac)
     print(new_mac)
 
-#aqui esta faltando adicionar o ":" a cada dois digitos
 
 
 
